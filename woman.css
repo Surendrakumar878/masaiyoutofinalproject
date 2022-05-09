@@ -1,0 +1,207 @@
+
+
+ .container{
+   display: flex;
+    /* width: 95%; */
+   margin: 0%;
+   padding: 0%;
+   padding-top: 6%; 
+   
+ }
+ .container>div:nth-child(1){
+   width:14%;
+   border-right: 5px rgb(190, 190, 190) solid;
+   position: relative;
+   margin: auto;
+   overflow: scroll;
+   padding-left: 1%;
+   height: 500px;
+ }
+ .container>div:nth-child(2){
+   overflow:scroll;
+   width: 100%; 
+   /* height: 70px; */
+   padding-left: 10px;
+   padding-right: 50px;
+   margin: auto;
+   height: 500px;
+   /* padding-left: 60%; */
+ }
+ 
+ .container>div::-webkit-scrollbar {
+   width: 0%;
+ }
+
+
+       ::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey; 
+   border-radius: 1x;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: red; 
+   border-radius: 1px;
+   width:1px
+ }
+
+   .main{
+       
+       width: 80%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       gap: 10px;
+   }
+
+   .main>div{
+       margin: auto;
+       width: 100%;
+       height: auto;
+       text-decoration: none;
+       font-style: normal;
+   }
+  
+
+   img:hover{
+      cursor: pointer;
+      /* -ms-transform: scale(0.5);  */
+     /* -webkit-transform: scale(0.4);  */
+     /* transform: scale(1.1);  */
+   }
+  .main>div>div{
+    position: relative;
+    width: 100%;
+    /* height: 320px; */
+  }
+   img{
+       width: 100%;
+       height: 60%;
+       margin: auto;
+       /* position:relative; */
+       transition: transform 1.2s;
+   }
+ img + button{
+   position: absolute;
+  top: 10%;
+  left: 0%;
+  right: 10%;
+  width: 100%;
+  cursor: pointer;
+  /* text-decoration: none; */
+ background: none;
+ height: 100%;
+ border: none;
+ font-size: 1px;
+  }
+  button:hover{
+    border: 1px solid #2E9AFE;
+    width: 100%;
+    height: 45px;
+    color: #2E9AFE;
+    background-color: white;
+    font-weight: 1;
+    font-size: 17px;
+    cursor: pointer;
+    top: 30%;
+    margin-top: 88%;
+  }
+
+   div+ p{
+       font-size: 18px;
+       font-weight: 700;
+       font-family: 'Lato', sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-family: 'PT Sans', sans-serif;
+   } 
+   div+p+h3{
+     font-family: 0;
+     color: rgba(0, 0, 0, 0.774);
+     font-size:18px;
+     margin: 0%;
+   }
+   p{
+     margin: 3%;
+   }
+   select{
+     width: 80%;
+     margin: auto;
+     height: 30px;
+     border: none;
+     margin-left: 5%;
+     font-size: 17px;
+   }
+   select>option{
+     color: rgb(21, 2, 26);
+     font-size: 16px;
+   }
+   h3:hover{
+     color: blue;
+     text-decoration: underline;
+     cursor: pointer;
+     font-size: 19px;
+   }
+   h3+p{
+     font-style: italic;
+   }
+   spen{
+     color: rgb(190, 5, 5);
+     font-size: 18px;
+     font-weight: 900;
+     position: relative;
+   }
+  spen+ h5{
+     /* margin: auto; */
+     color: rgb(194, 4, 4);
+     /* position:absolute ; */
+     margin-left: 33%;
+     margin-top: -10%;
+    font-size: 17px;
+    font-weight: 400;
+   }
+   h5+p{
+     text-decoration: line-through;
+     font-size: 18px;
+     /* margin-top: 4%; */
+     margin-top: -4%;
+     color: rgba(0, 0, 0, 0.705);
+   }
+   div+h4{
+     /* color: rgba(187, 17, 17, 0.705); */
+     font-weight: lighter;
+     margin: 3%;
+     font-size: 16px;
+     font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+   }
+
+    @media all and (min-width:50px) and (max-width:450px){
+      .main{
+       
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 6px;
+    }
+    }
+
+    @media all and (min-width:451px) and (max-width:750px){
+      .main{
+       
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 6px;
+    }
+    }
+
+    .checked{
+      color: teal;
+      /* font-size: 73px; */
+    }
